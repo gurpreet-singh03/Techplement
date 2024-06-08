@@ -3,13 +3,14 @@ const Schema = mongoose.Schema;
 
 const QuoteSchema = new Schema({
     text: {
-        type: String,
-        required: true
+        required: true,
+        type: String
     },
     author: {
-        type: String,
-        required: true
+        required: true,
+        type: String
     }
+
 });
 
 module.exports = mongoose.model('Quote', QuoteSchema);
